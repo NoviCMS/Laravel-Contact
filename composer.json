@@ -3,8 +3,8 @@
     "description": "A Laravel 5 package for adding a simple contact form to a website.",
     "require": {
         "php": ">=5.5.9",
-        "draperstudio/laravel-service-provider": "~1.0",
-        "laravelcollective/html": "~5.0|~5.1|~5.2"
+        "draperstudio/laravel-service-provider": "^1.0",
+        "laravelcollective/html": "5.1.*|5.2.*"
     },
     "autoload": {
         "psr-4": {
