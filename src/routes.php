@@ -1,12 +1,20 @@
 <?php
 
+/*
+ * This file is part of Laravel Contact.
+ *
+ * (c) DraperStudio <hello@draperstudio.tech>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-get(config('contact.uri'), [
+Route::get(config('contact.uri'), [
     'as' => 'ds.contact.form',
     'uses' => 'DraperStudio\Contact\Controllers\ContactController@form',
 ]);
 
-post(config('contact.uri'), [
+Route::post(config('contact.uri'), [
     'as' => 'ds.contact.handle',
     'uses' => 'DraperStudio\Contact\Controllers\ContactController@send',
 ]);
