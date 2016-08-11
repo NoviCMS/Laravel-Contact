@@ -20,8 +20,7 @@
                 ]) !!}
             @elseif ($options['type'] == 'select')
                 {!! Form::select($fieldName, $options['choices'], old($fieldName), [
-                    'class'       => 'form-control contact-form-'.$fieldName,
-                    'placeholder' => trans('contact::form.placeholders.'.$fieldName)
+                    'class'       => 'form-control contact-form-'.$fieldName
                 ]) !!}
             @else
                 {!! Form::text($fieldName, old($fieldName), [
